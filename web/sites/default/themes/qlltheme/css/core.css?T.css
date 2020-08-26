@@ -1,0 +1,12 @@
+/**
+ * Basic CSS to make the page legible across browsers
+ */
+html, body {
+	margin: 0;
+	padding: 0;
+
+	background-color: white;
+	color: #333333;
+
+	font-family: Helvetica,Arial,sans-serif;
+}

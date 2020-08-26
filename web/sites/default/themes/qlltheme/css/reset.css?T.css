@@ -1,0 +1,50 @@
+/**
+ * Reset browser and core Drupal CSS
+ */
+ol, ul, li, ul.menu, ul.menu li, li.leaf {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+
+	list-style-type: none;
+	list-style-image: none;
+	background-image: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+.content div.fieldgroup {
+	margin: 0;
+	padding: 0;
+}
+
+/* Bring in own basic CSS */
+p {
+	margin: 0.5em 0;
+}
+
+blockquote {
+	margin-left: 1em;
+}
+
+#content-content ol, #content-content ul  {
+	padding-left: 2em;
+}
+#content-content ol li {
+	list-style-type: decimal;
+}
+
+#content-content ul li {
+	list-style-type: circle;
+}
+#content-content ul ul li {
+	list-style-type: disc;
+}
+
+#content-content ul ul ul li {
+	list-style-type: square;
+}
+

@@ -1,0 +1,237 @@
+/**
+ * Specifics of formatting, not including navigation or columns
+ */
+ 
+/**
+ * Generic
+ **/
+
+/* Messaging System */
+div.messages {
+ margin: 0.5em 0 1em 0; 
+ padding: 0.5em;
+ color: #222200;
+ border-width: 1px;
+ border-style: solid;
+}
+
+div.status {
+ border-color: #27F21B;
+ background-color: #D9FAD8;
+}
+
+div.warning {
+  border-color: #F0C020;
+  background-color: #FFFFDD;
+}
+
+div.error {
+ border-color: #F20022;
+ background-color: #FFDBDD;
+}
+
+
+div.description {
+  color: #666666;
+  margin: 0.5em 0 1em 0;
+}
+
+span#heading-and-logo-container span {
+	padding: 5px 10px 5px 5px;
+
+	border: solid 1px #bbbbbb;
+	background-color: #dddddd;
+}
+span#heading-and-logo-container, 
+span#heading-and-logo-container a,
+span#heading-and-logo-container span {
+	/* typeface.js */
+	font-family: URW Chancery L, serif;
+	font-weight: normal;
+	font-style: italic;
+}
+span#heading-and-logo-container {
+	font-size: 2.5em;
+}
+
+/* Leading .content required, to override the override in fieldset.css */
+.content .field-field-intro {
+	font-size: 0.9em;
+	padding: 0.75em 1em;
+	margin: 1em 0;
+
+	background-color: #dddddd;
+}
+
+.content .group-callout {
+	float: right;
+	width: 33%;
+	padding: 0 0 0.5em 0.5em;
+}
+
+.content .group-callout .content {
+	padding: 0.75em 1em;
+
+	font-size: 0.9em;
+	background-color: #FFD088;
+}
+
+/* Box headings */
+.group-callout  .field-field-callout-heading,
+.group-see-also .field-field-see-also-heading,
+.block-heading {
+	font-weight: bold;
+}
+.block-heading {
+	margin: 0.25em 0;
+	font-size: 1.3em;
+}
+
+/**
+ * Node Types
+ **/
+.node #documents {
+	float: right;
+	width: 25%;
+}
+
+#content-content .field-field-date-published,
+.node-type-article #content-content .field-field-author,
+.news-date 
+{
+	margin-right: 0.3em;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.node-teaser ul.links {
+	display: block;
+	text-align: right;
+}
+
+#content-content .node .embed {
+	text-align: center;
+}
+
+/* Exercises in Song */
+.node-type-exercise h2 {
+	clear: none;
+}
+.eis {
+	float: right;
+	text-align: right;
+	font-size: 0.8em;
+}
+.eis-this {
+	width: 160px;
+	padding: 0.5em;
+
+	color: #dddddd;
+	background-color: #8899DD;
+	border: solid 1px #0033CC;
+
+	font-style: italic;
+}
+
+.eis-this cite {
+	font-style: normal;
+}
+
+.eis-that {
+	margin: 1em 0 3em;
+}
+
+.node-type-exercise .links {
+	clear: right;
+}
+
+#content-content .links ul {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+
+	padding: 0;
+	margin: 0;
+
+	text-align: center;
+	font-size: 0.9em;
+}
+
+/* EiS 2008 index */
+.view-display-id-page_2 .views-row-odd, 
+.view-display-id-page_2 .views-row-even,
+#block-views-Exercises-block_2 .views-row-first {
+	width: 110px;
+	padding: 0 5px 5px;
+	text-align: center;
+	font-weight: bold;
+}
+.view-display-id-page_2 .views-row-odd, 
+.view-display-id-page_2 .views-row-even {
+	float: left;
+}
+
+#block-views-Exercises-block_2 .view-content {
+	text-align: center;
+}
+#block-views-Exercises-block_2 .views-row-first {
+	margin: auto;
+}
+
+.view-display-id-page_2 div div div, 
+#block-views-Exercises-block_2 .view-display-id-block_2 div div div {
+	border: solid 2px #333333;
+}
+
+.view-display-id-page_2 .views-field-title, 
+#block-views-Exercises-block_2 .view-display-id-block_2 .views-field-title {
+	border-bottom: none;
+
+	color: white;
+	background-color: #ff0000;
+}
+
+.view-display-id-page_2 .views-field-title a, 
+#block-views-Exercises-block_2 .views-field-title a {
+	color: white;
+	font-size: 0.8em;
+	font-variant: small-caps;
+}
+
+/* Long titles mess up the grid */
+.view-display-id-page_2 .views-field-title a {
+	font-size: 0.7em;
+}
+.view-display-id-page_2 .views-field-title {
+	max-height: 2.8em;
+	height: 2.8em;
+}
+
+.view-display-id-page_2 .views-field-field-sort-order-value,
+#block-views-Exercises-block_2 .views-field-field-sort-order-value {
+	padding: 15px 0;
+}
+
+.view-display-id-page_2 .views-field-field-sort-order-value a,
+#block-views-Exercises-block_2 .views-field-field-sort-order-value a {
+	color: #880000;
+	font-size: 2.5em;
+}
+
+/* Tabular exercises */
+.page-exercise #content-content table {
+	width: 100%;
+}
+
+.page-exercise #content-content table .views-field-title {
+	width: 75%;
+}
+
+.page-exercise #content-content td, .page-exercise #content-content th {
+	padding: 2px 4px;
+}
+
+.page-exercise #content-content th {
+	color: #666;
+	font-size: 0.8em;
+}

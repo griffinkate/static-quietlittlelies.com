@@ -1,0 +1,53 @@
+/**
+ * Gross page structure
+ */
+body {
+	text-align: center;
+}
+#frame {
+	text-align: left;
+
+	position: relative;
+	width: 960px;
+	margin: auto;
+}
+
+#header, #content, #footer {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+#header {
+	padding-bottom: 25px;
+}
+
+.column {
+	float: left;
+}
+
+#content-nav {
+	width: 160px;
+	padding-right: 20px;
+}
+#content-extra {
+	width: 160px;
+	padding-left: 20px;
+}
+
+.sidebar-left #content-main {
+	width: 780px;
+}
+
+.sidebar-right #content-main {
+	width: 780px;
+}
+
+.two-sidebars #content-main {
+	width: 600px;
+}
+
+#content-content {
+	width: 100%;
+	overflow: hidden;
+}

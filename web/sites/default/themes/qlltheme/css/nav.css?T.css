@@ -1,0 +1,51 @@
+/**
+ * Specifics of formatting navigation columns
+ */
+
+#header-region #block-menu-primary-links ul li {
+	display: inline;
+	padding-left: 1em;
+}
+
+#header-region {
+	float: right;
+}
+
+#content-nav, #content-extra {
+	font-size: 0.8em;
+	line-height: 150%;
+}
+#content-nav ul.menu ul.menu {
+	margin: 0.3em 0 0.3em 0.5em;
+}
+
+#user-login-form ul, #user-login-form ul li {
+	padding: 0;
+	margin: 0;
+	text-indent: 0;
+
+	list-style-type: none;
+}
+#user-login-form .item-list {
+	padding-top: 0.5em;
+}
+
+#search-block-form input {
+	margin-bottom: 0.25em;
+}
+
+#footer {
+	margin: 2em 0;
+	padding-top: 1em;
+	border-top: solid 2px gray;
+
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#content-content .vertical-tabs ul li {
+	list-style-type: none;
+}
+#content-content .vertical-tabs ul {
+	padding: 0;
+}

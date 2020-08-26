@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://quietlittlelies.com"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+ <title>Quiet little Lies - nonfiction</title>
+ <link>http://quietlittlelies.com/taxonomy/term/12/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Cut off the telephone</title>
+ <link>http://quietlittlelies.com/article/cut-telephone</link>
+ <description>&lt;div class=&quot;field field-type-date field-field-date-published&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;span class=&quot;date-display-single&quot;&gt;13 Nov 2009&lt;/span&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-type-text field-field-summary&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;p&gt;It has been in disuse for years anyway.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;When someone says they&#039;ve lost a friend they usually mean they&#039;ve fallen out with them. The realization finally struck me this weekend that I had lost one in a far more permanent way; that I had also foolishly neglected the friendship for so long (thanks to geography, social scenes and the ever-intervening mess of live&#039;s administrative duties) that it was only on losing him that I was jolted into reminiscing about how much had been lost.&lt;/p&gt;
+&lt;div class=&quot;field field-type-nodereference field-field-author&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+            &lt;div class=&quot;field-item odd&quot;&gt;
+                    &lt;a href=&quot;/author/j-p-stacey&quot;&gt;J-P Stacey&lt;/a&gt;        &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://quietlittlelies.com/article/cut-telephone&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://quietlittlelies.com/category/tags/nonfiction">nonfiction</category>
+ <pubDate>Fri, 13 Nov 2009 21:00:36 +0000</pubDate>
+ <dc:creator>jp</dc:creator>
+ <guid isPermaLink="false">530 at http://quietlittlelies.com</guid>
+</item>
+</channel>
+</rss>
