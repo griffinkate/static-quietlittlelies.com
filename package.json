@@ -1,0 +1,24 @@
+{
+  "name": "static-qll",
+  "version": "1.0.0",
+  "description": "lunrjs generation scripts",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "lunr": "^2.3.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-index": "node lunr-idx-gen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/griffinkate/static-quietlittlelies.com.git"
+  },
+  "author": "Johan Gant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/griffinkate/static-quietlittlelies.com/issues"
+  },
+  "homepage": "https://github.com/griffinkate/static-quietlittlelies.com#readme"
+}
