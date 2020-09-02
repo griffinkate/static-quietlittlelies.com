@@ -2,7 +2,7 @@ var lunrIndex,
     $results,
     documents;
 
-const maxResults = 10;
+const maxResults = 25;
 const minQueryLength = 3;
 
 function initLunr() {
@@ -23,7 +23,17 @@ function initLunr() {
               this.add(doc)
             } catch (e) {}
           }, this)
-        })
+        });
+
+        let urlParams = new URLSearchParams(window.location.search);
+        let query = urlParams.get('keys');  
+
+        if (query.length < minQueryLength) {
+          return;
+        }
+      
+        let results = search(query);
+        renderResults(results);        
     })
     .fail(function(jqxhr, textStatus, error) {
         var err = textStatus + ", " + error;
@@ -32,6 +42,7 @@ function initLunr() {
 }
 
 function search(query) {
+  console.log('search');
   return lunrIndex.search(query).map(function(result) {
     return documents.filter(function(page) {
       try {
@@ -49,9 +60,19 @@ function renderResults(results) {
     return;
   }
 
+  let resultsText = '';
+
+  if (results.length > maxResults) {
+    resultsText = 'Showing ' + maxResults + ' of ' + results.length + ' results';
+  }
+  else {
+    resultsText = results.length + ' search results';
+  }
+
+  $('h2.results-title').text(resultsText).show();
+
   // show results up to our max defined level.
   results.slice(0, maxResults).forEach(function(result) {
-    console.log(result);
     var $result = $('<dt class="title">');
 
     $result.append($('<a>', {
@@ -72,30 +93,27 @@ function renderResults(results) {
 }
 
 function initUI() {
-  $results = $(".search-results");
+  $results = $(".search-results");  
 
-  // Check for query parameter.
-  let urlParams = new URLSearchParams(window.location.search);
-  let query = urlParams.get('keys');  
-
-  //$("#search-form").submit(function(event){    
+  $("#edit-keys").keyup(function(event){    
     // empty previous results
     $results.empty();
+    $('h2.results-title').hide();
 
     // trigger search when at least two chars provided.
-    // var query = $(this).val();    
+    var query = $(this).val();    
     if (query.length < minQueryLength) {
       return;
     }
 
     var results = search(query);
     renderResults(results);
+  });
 
-    // event.preventDefault();
-  //});
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
+  $('h2.results-title').hide();
   initLunr();
   initUI();
 });
