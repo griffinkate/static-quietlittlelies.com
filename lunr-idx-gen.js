@@ -32,7 +32,9 @@ function getHtmlFileList(dir) {
     let files = [];
 
     fs.readdirSync(dir).forEach(file => { 
-        if (path.extname(file) == ".html") {
+        // Only parse html files and skip listing pages (those with a ?page param in the filename).
+        let regex = /page=/;
+        if (path.extname(file) == ".html" && path.basename(file).match(regex) == null) {
             files.push(file); 
         }
     });
