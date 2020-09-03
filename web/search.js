@@ -28,10 +28,13 @@ function initLunr() {
         let urlParams = new URLSearchParams(window.location.search);
         let query = urlParams.get('keys');  
 
+        // Pre-fill the input element with the query value.
+        $('#edit-keys').attr('value', query);
+
         if (query.length < minQueryLength) {
           return;
         }
-      
+
         let results = search(query);
         renderResults(results);        
     })
@@ -42,7 +45,6 @@ function initLunr() {
 }
 
 function search(query) {
-  console.log('search');
   return lunrIndex.search(query).map(function(result) {
     return documents.filter(function(page) {
       try {
